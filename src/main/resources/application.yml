@@ -4,3 +4,15 @@ server:
 jasypt:
   encryptor:
     password: some_salt
+
+spring:
+  redis:
+    host: localhost
+    port: 6379
+    timeout: 10
+    jedis:
+      pool:
+        max-idle: 10
+        min-idle: 10
+        max-active: 200
+        max-wait: 10000

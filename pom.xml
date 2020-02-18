@@ -51,6 +51,13 @@
             <version>2.1.2</version>
         </dependency>
 
+        <!-- https://github.com/crossoverJie/distributed-redis-tool -->
+        <dependency>
+            <groupId>top.crossoverjie.opensource</groupId>
+            <artifactId>distributed-redis-tool</artifactId>
+            <version>1.0.5</version>
+        </dependency>
+
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
