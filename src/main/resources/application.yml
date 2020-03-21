@@ -16,3 +16,9 @@ spring:
         min-idle: 10
         max-active: 200
         max-wait: 10000
+
+rocketmq:
+  name-server: localhost:9876
+  producer:
+    group: my-group
+    send-message-timeout: 1000
