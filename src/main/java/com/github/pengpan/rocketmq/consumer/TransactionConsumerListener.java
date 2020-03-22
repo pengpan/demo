@@ -1,4 +1,4 @@
-package com.github.pengpan.rocketmq.transaction;
+package com.github.pengpan.rocketmq.consumer;
 
 import lombok.extern.slf4j.Slf4j;
 import org.apache.rocketmq.client.consumer.DefaultMQPushConsumer;
