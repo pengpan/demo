@@ -28,6 +28,8 @@ public class RMQTests {
         producer();
         orderProducer();
         transactionProducer();
+
+        // waiting consumer...
         TimeUnit.SECONDS.sleep(3);
     }
 

@@ -21,5 +21,3 @@ rocketmq:
   name-server: localhost:9876
   producer:
     group: my-group
-    send-message-timeout: 1000
-    retry-times-when-send-failed: 3
