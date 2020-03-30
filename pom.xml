@@ -65,6 +65,13 @@
             <version>2.1.0</version>
         </dependency>
 
+        <!-- https://github.com/apache/zookeeper -->
+        <dependency>
+            <groupId>org.apache.zookeeper</groupId>
+            <artifactId>zookeeper</artifactId>
+            <version>3.5.5</version>
+        </dependency>
+
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>

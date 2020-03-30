@@ -21,3 +21,7 @@ rocketmq:
   name-server: localhost:9876
   producer:
     group: my-group
+
+zookeeper:
+  address: localhost:2181
+  timeout: 4000
