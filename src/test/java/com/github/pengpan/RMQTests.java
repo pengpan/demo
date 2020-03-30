@@ -4,7 +4,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.rocketmq.client.producer.*;
 import org.apache.rocketmq.common.message.Message;
 import org.apache.rocketmq.common.message.MessageQueue;
-import org.apache.rocketmq.spring.core.RocketMQTemplate;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -17,11 +16,8 @@ import java.util.concurrent.TimeUnit;
 @SpringBootTest
 public class RMQTests {
 
-    private final DefaultMQProducer producer;
-
-    public RMQTests(@Autowired RocketMQTemplate rocketMQTemplate) {
-        this.producer = rocketMQTemplate.getProducer();
-    }
+    @Autowired
+    private DefaultMQProducer producer;
 
     @Test
     public void rmqTest() throws Exception {
