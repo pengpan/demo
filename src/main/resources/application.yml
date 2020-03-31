@@ -7,8 +7,8 @@ jasypt:
 
 spring:
   redis:
-    host: localhost
-    port: 6379
+#    host: localhost
+#    port: 6379
     timeout: 10
     jedis:
       pool:
@@ -16,6 +16,14 @@ spring:
         min-idle: 10
         max-active: 200
         max-wait: 10000
+    cluster:
+      nodes:
+        - redis://172.16.82.130:6379
+        - redis://172.16.82.131:6379
+        - redis://172.16.82.132:6379
+        - redis://172.16.82.130:6380
+        - redis://172.16.82.131:6380
+        - redis://172.16.82.132:6380
 
 rocketmq:
   name-server: localhost:9876
@@ -23,5 +31,5 @@ rocketmq:
     group: my-group
 
 zookeeper:
-  address: localhost:2181
+  address: 172.16.82.130:2181,172.16.82.131:2181,172.16.82.132:2181
   timeout: 4000
